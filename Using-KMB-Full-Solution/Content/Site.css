@@ -1,0 +1,66 @@
+﻿body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.intro {
+    padding-top: 0;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea,
+.checkbox-group {
+    /*max-width: 280px;*/
+    margin-bottom: 10px;
+}
+
+    .checkbox-group .btn span.glyphicon {
+        opacity: 0;
+    }
+
+    .checkbox-group .btn.active span.glyphicon {
+        opacity: 1;
+    }
+
+.control-label {
+    padding-top: 8px;
+}
+
+.table-vertical-align tbody tr td {
+    line-height: 55px;
+    vertical-align: middle;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+a.text-white:hover,
+a.text-white:focus {
+    color: #e8e8e8;
+}
+
+.text-black {
+    color: #383838;
+}
+
+a.text-black:hover,
+a.text-black:focus {
+    color: #000000;
+}
+
+.login {
+    padding-top: 100px;
+}
+
+.sub-item-image {
+    cursor: pointer;
+}

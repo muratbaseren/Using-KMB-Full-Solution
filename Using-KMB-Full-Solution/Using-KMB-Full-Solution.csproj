@@ -131,6 +131,11 @@
     <Content Include="Content\Gridmvc.css" />
     <Content Include="Content\gridmvc.datepicker.css" />
     <Content Include="Content\gridmvc.datepicker.min.css" />
+    <Content Include="Content\hint.base.css" />
+    <Content Include="Content\hint.base.min.css" />
+    <Content Include="Content\hint.css" />
+    <Content Include="Content\hint.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -494,16 +499,28 @@
     <Content Include="scripts\jquery.validate.min.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\myckeditor_loader.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="DataAccessLayer\DatabaseContext.cs" />
     <Compile Include="Filters\AuthAttribute.cs" />
     <Compile Include="Filters\ExcAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\ConfigHelper.cs" />
+    <Compile Include="Infrastructure\ImageUploadHelper.cs" />
+    <Compile Include="Infrastructure\MailHelper.cs" />
+    <Compile Include="Infrastructure\MyFunctionHelper.cs" />
+    <Compile Include="Infrastructure\MyHtmlHelper.cs" />
+    <Compile Include="Infrastructure\MyWebHelper.cs" />
+    <Compile Include="Models\Abstract\IOrderable.cs" />
+    <Compile Include="Models\DbTableBase.cs" />
+    <Compile Include="Models\ErrorLog.cs" />
+    <Compile Include="Models\SuperUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -522,7 +539,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
