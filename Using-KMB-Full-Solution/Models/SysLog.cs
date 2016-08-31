@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace MuhendisAsci.Web.Models
 {
-    [Table("errorlog")]
-    public class ErrorLog
+    [Table("syslog")]
+    public class SysLog
     {
         [Key]
-        public Guid ErrorID { get; set; }
+        public Guid ID { get; set; }
         public string Source { get; set; }
         public string Message { get; set; }
 

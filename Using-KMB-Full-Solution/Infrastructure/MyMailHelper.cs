@@ -6,9 +6,9 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MuhendisAsci.Web.Infrastructure
+namespace Using_KMB_Full_Solution.Infrastructure
 {
-    public class MailHelper
+    public class MyMailHelper
     {
         public static bool SendMail(string body, string to, string subject, bool isHtml = true)
         {
@@ -23,7 +23,7 @@ namespace MuhendisAsci.Web.Infrastructure
             try
             {
                 var message = new MailMessage();
-                message.From = new MailAddress(ConfigHelper.MailUid);
+                message.From = new MailAddress(MyConfigHelper.MailUid);
 
                 to.ForEach(x =>
                 {
@@ -34,10 +34,10 @@ namespace MuhendisAsci.Web.Infrastructure
                 message.Body = body;
                 message.IsBodyHtml = isHtml;
 
-                using (var smtp = new SmtpClient(ConfigHelper.MailHost, int.Parse(ConfigHelper.MailPort)))
+                using (var smtp = new SmtpClient(MyConfigHelper.MailHost, int.Parse(MyConfigHelper.MailPort)))
                 {
                     smtp.EnableSsl = false;
-                    smtp.Credentials = new NetworkCredential(ConfigHelper.MailUid, ConfigHelper.MailPass);
+                    smtp.Credentials = new NetworkCredential(MyConfigHelper.MailUid, MyConfigHelper.MailPass);
 
                     smtp.Send(message);
                     result = true;

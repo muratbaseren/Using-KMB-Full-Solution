@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Web;
 
-namespace MuhendisAsci.Web.Infrastructure
+namespace Using_KMB_Full_Solution.Infrastructure
 {
     public class EmailHelper
     {

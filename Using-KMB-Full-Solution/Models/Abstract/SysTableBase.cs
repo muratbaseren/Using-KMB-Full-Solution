@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace MuhendisAsci.Web.Models
+namespace MuhendisAsci.Web.Models.Abstract
 {
-    public abstract class DbTableBase
+    public abstract class SysTableBase
     {
         [DisplayName("Oluşturma Tarihi"), ScaffoldColumn(false)]
         public DateTime? CreatedOn { get; set; }

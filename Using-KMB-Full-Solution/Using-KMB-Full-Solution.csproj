@@ -505,22 +505,28 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataAccessLayer\DatabaseContext.cs" />
-    <Compile Include="Filters\AuthAttribute.cs" />
-    <Compile Include="Filters\ExcAttribute.cs" />
+    <Compile Include="Filters\MyAuthAttribute.cs" />
+    <Compile Include="Filters\MyExcAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Infrastructure\ConfigHelper.cs" />
-    <Compile Include="Infrastructure\ImageUploadHelper.cs" />
-    <Compile Include="Infrastructure\MailHelper.cs" />
+    <Compile Include="Infrastructure\MyConfigHelper.cs" />
+    <Compile Include="Infrastructure\MyImageUploadHelper.cs" />
+    <Compile Include="Infrastructure\MyMailHelper.cs" />
     <Compile Include="Infrastructure\MyFunctionHelper.cs" />
     <Compile Include="Infrastructure\MyHtmlHelper.cs" />
     <Compile Include="Infrastructure\MyWebHelper.cs" />
+    <Compile Include="Infrastructure\MyConstants.cs" />
+    <Compile Include="Models\SysSiteConfig.cs" />
+    <Compile Include="Models\SysSocialItem.cs" />
+    <Compile Include="Models\Abstract\IIneffaceable.cs" />
     <Compile Include="Models\Abstract\IOrderable.cs" />
-    <Compile Include="Models\DbTableBase.cs" />
-    <Compile Include="Models\ErrorLog.cs" />
-    <Compile Include="Models\SuperUser.cs" />
+    <Compile Include="Models\Abstract\SysTableBase.cs" />
+    <Compile Include="Models\SysLog.cs" />
+    <Compile Include="Models\SysUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -529,6 +535,7 @@
     <Content Include="scripts\jquery-2.2.4.min.map" />
     <Content Include="Views\Shared\_GridPager.cshtml" />
     <Content Include="Views\Shared\_Grid.cshtml" />
+    <Content Include="Views\Error\Show.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -538,7 +545,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

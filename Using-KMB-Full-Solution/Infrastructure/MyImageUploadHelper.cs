@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace MuhendisAsci.Web.Infrastructure
+namespace Using_KMB_Full_Solution.Infrastructure
 {
-    public partial class ImageUploadHelper
+    public partial class MyImageUploadHelper
     {
         public static string SaveImage(HttpPostedFileBase image)
         {

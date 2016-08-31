@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MuhendisAsci.Web.Infrastructure
+namespace Using_KMB_Full_Solution.Infrastructure
 {
     public class MyFunctionHelper
     {
